@@ -12,7 +12,7 @@
     
     
     
-    <title>ciallo</title>
+    <title>Markdown教学 | ciallo</title>
     <link href="http://q1github.github.io" rel="prefetch" />
 
     
@@ -128,10 +128,26 @@
                 
                 
                 
-                <li class="">
-                    <a href="/tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/Markdown/">Markdown</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -158,16 +174,25 @@
         <i class="fa fa-home"></i>
         <a href="http://q1github.github.io">ciallo</a>
         >
-        <span></span>
+        <span>Markdown教学</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/"></a>
+                <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/">Markdown教学</a>
             </h1>
         </div>
         <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Markdown/">Markdown</a>, 
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                
+            </span>
             
             <span class="label label-gal">
                 <i class="fa fa-calendar"></i> 2025-06-22
@@ -180,13 +205,20 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/"></a>
+                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/">Markdown教学</a>
                 </h4>
             </div>
             <p>
                 <i class="fa fa-calendar"></i> 2025-06-22
             </p>
             <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Markdown/">Markdown</a>, 
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                
                 
                 
             </p>
@@ -228,8 +260,41 @@
 <li>有序列表</li>
 <li>会自动排序</li>
 </ol>
-<h2 id="两个刀乐符号用于表达数学公式"><a href="#两个刀乐符号用于表达数学公式" class="headerlink" title="两个刀乐符号用于表达数学公式"></a>两个刀乐符号用于表达数学公式</h2><p>例如$$f(x)&#x3D;ax^2+bx_1+c+\Delta+\sqrt(2ab)$$<br>注:^用于上标、_用于下标、Delta输入\Delta、根号是\sqrt()、两个两对刀乐用于居中</p>
-<h2 id="日期：2025-6-22"><a href="#日期：2025-6-22" class="headerlink" title="日期：2025&#x2F;6&#x2F;22"></a>日期：2025&#x2F;6&#x2F;22</h2>
+<h2 id="两个刀乐符号用于表达数学公式"><a href="#两个刀乐符号用于表达数学公式" class="headerlink" title="两个刀乐符号用于表达数学公式"></a>两个刀乐符号用于表达数学公式</h2><p>例如<br>$$f(x)&#x3D;ax^2+bx_1+c+\Delta+\sqrt(2ab)$$<br>注:^用于上标、_用于下标、Delta输入\Delta、根号是\sqrt()、两个两对刀乐用于居中</p>
+<h2 id="日期：2025-6-23"><a href="#日期：2025-6-23" class="headerlink" title="日期：2025&#x2F;6&#x2F;23"></a>日期：2025&#x2F;6&#x2F;23</h2><p>两对三个斜点用于写代码。注：数字一左边的符号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>安装插件Markdown Preview Mermaid Support</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A(起始)--&gt;B(txt);</span><br><span class="line">    A--&gt;C&#123;条件一&#125;;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D[终止];</span><br></pre></td></tr></table></figure>
+
+<p>::: mermaid<br>graph TD;<br>    A–&gt;B;<br>    A–&gt;C;<br>    B–&gt;D;<br>    C–&gt;D;<br>:::</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">architecture-beta</span><br><span class="line">    service user(mdi:account)</span><br><span class="line">    service lambda(logos:aws-lambda)</span><br><span class="line"></span><br><span class="line">    user:R --&gt; L:lambda</span><br></pre></td></tr></table></figure>
+<p>“markdown.styles”: [<br>    “<a target="_blank" rel="noopener" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">https://use.fontawesome.com/releases/v5.7.1/css/all.css</a>“<br>]</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    fa:fa-check--&gt;fa:fa-coffee</span><br></pre></td></tr></table></figure>
+
+<p>表格用竖线（回车上面那个），表头用竖线加减号在下面表示，哪边对齐就往哪边用冒号，居中两个冒号,注意用半角。如果觉得麻烦可用al帮助。</p>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="right">年龄</th>
+<th align="center">职业</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="right">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="right">5</td>
+<td align="center">4</td>
+</tr>
+</tbody></table>
+<p>超链接显示内容用方括号后面跟圆括号里面加链接<br>例：B站首页<a target="_blank" rel="noopener" href="https://www.bilibili.com/">bilibili</a></p>
+<p>图片的语法与链接相似但要在前面加!,最重要的是图片命名别用汉字。<br>例：<img src="/2.jpg" alt="便签数字"></p>
+
     </div>
 </article>
 
@@ -291,13 +356,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/"></a>
+                    <a href="/2025/06/22/%E5%A4%A7%E5%AD%A6%EF%BC%88%E5%A4%A7%E4%BA%8C%EF%BC%89/">大学生活</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/06/22/%E5%A4%A7%E5%AD%A6%EF%BC%88%E5%A4%A7%E4%BA%8C%EF%BC%89/">大学生活</a>
+                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/">Markdown教学</a>
                 </span>
             </li>
             
@@ -349,7 +414,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/"></a>
+                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/">Markdown教学</a>
                 </span>
             </li>
             
@@ -381,6 +446,10 @@
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/Markdown/" style="font-size: 8.162247122844143px;" class="tag-cloud-link">Markdown</a>
+    
+    <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 8.453179209154435px;" class="tag-cloud-link">教程</a>
     
 </div>
                 

@@ -128,10 +128,26 @@
                 
                 
                 
-                <li class="">
-                    <a href="/tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/Markdown/">Markdown</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -208,7 +224,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = '/imgs/preview/preview3.jpg'
+        var defaultPreview = '/imgs/preview/preview1.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -419,13 +435,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/"></a>
+                    <a href="/2025/06/22/%E5%A4%A7%E5%AD%A6%EF%BC%88%E5%A4%A7%E4%BA%8C%EF%BC%89/">大学生活</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/06/22/%E5%A4%A7%E5%AD%A6%EF%BC%88%E5%A4%A7%E4%BA%8C%EF%BC%89/">大学生活</a>
+                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/">Markdown教学</a>
                 </span>
             </li>
             
@@ -477,7 +493,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/"></a>
+                    <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/">Markdown教学</a>
                 </span>
             </li>
             
@@ -509,6 +525,10 @@
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/Markdown/" style="font-size: 18.19992515527231px;" class="tag-cloud-link">Markdown</a>
+    
+    <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 9.541288669236785px;" class="tag-cloud-link">教程</a>
     
 </div>
                 
