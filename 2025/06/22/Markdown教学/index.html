@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="q">
     
@@ -45,6 +45,17 @@
         }
     </style>
     
+
+    <!-- Mermaid JS -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ 
+    theme: 'default',
+    startOnLoad: true,
+    securityLevel: 'loose'
+  });
+</script>
+
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
@@ -57,9 +68,9 @@
         }
       }
     </script>-->
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 7.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 <body>
-    <!-- 背景轮播图功能 -->
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- 背景轮播图功能 -->
     <section class="hidden-xs">
     <ul class="cb-slideshow">
         <li><span>天若</span></li>
@@ -277,12 +288,21 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <p>安装插件Markdown Preview Mermaid Support</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A(起始)--&gt;B(txt);</span><br><span class="line">    A--&gt;C&#123;条件一&#125;;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D[终止];</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TD;
+    A[开始] --> B[步骤1];
+    B --> C{条件判断};
+    C -->|是| D[执行操作1];
+    C -->|否| E[执行操作2];</pre>
 
 <p>::: mermaid<br>graph TD;<br>    A–&gt;B;<br>    A–&gt;C;<br>    B–&gt;D;<br>    C–&gt;D;<br>:::</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">architecture-beta</span><br><span class="line">    service user(mdi:account)</span><br><span class="line">    service lambda(logos:aws-lambda)</span><br><span class="line"></span><br><span class="line">    user:R --&gt; L:lambda</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">architecture-beta
+    service user(mdi:account)
+    service lambda(logos:aws-lambda)
+
+    user:R --> L:lambda</pre>
 <p>“markdown.styles”: [<br>    “<a target="_blank" rel="noopener" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">https://use.fontawesome.com/releases/v5.7.1/css/all.css</a>“<br>]</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    fa:fa-check--&gt;fa:fa-coffee</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph LR
+    fa:fa-check-->fa:fa-coffee</pre>
 
 <p>表格用竖线（回车上面那个），表头用竖线加减号在下面表示，哪边对齐就往哪边用冒号，居中两个冒号,注意用半角。如果觉得麻烦可用al帮助。</p>
 <table>
@@ -408,6 +428,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2025/06/21/hello%20world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2025/06/22/%E5%A4%A7%E5%AD%A6%EF%BC%88%E5%A4%A7%E4%BA%8C%EF%BC%89/">大学生活</a>
                 </span>
             </li>
@@ -415,12 +441,6 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2025/06/22/Markdown%E6%95%99%E5%AD%A6/">Markdown教学</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2025/06/21/hello%20world/">Hello World</a>
                 </span>
             </li>
             
@@ -459,13 +479,13 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/Markdown/" style="font-size: 11.489147149572005px;" class="tag-cloud-link">Markdown</a>
+    <a href="/tags/Markdown/" style="font-size: 14.035042369839214px;" class="tag-cloud-link">Markdown</a>
     
-    <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 11.809335119622041px;" class="tag-cloud-link">教程</a>
+    <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 8.6457194692742px;" class="tag-cloud-link">教程</a>
     
-    <a href="/tags/%E6%97%A5%E8%AF%AD/" style="font-size: 14.762261692876393px;" class="tag-cloud-link">日语</a>
+    <a href="/tags/%E6%97%A5%E8%AF%AD/" style="font-size: 18.03170970538885px;" class="tag-cloud-link">日语</a>
     
-    <a href="/tags/50%E9%9F%B3%E5%9B%BE/" style="font-size: 12.968227377068477px;" class="tag-cloud-link">50音图</a>
+    <a href="/tags/50%E9%9F%B3%E5%9B%BE/" style="font-size: 9.204877986238412px;" class="tag-cloud-link">50音图</a>
     
 </div>
                 
@@ -520,7 +540,7 @@
 <!-- 回到顶端 -->
 <div id="gal-gotop">
     <i class="fa fa-angle-up"></i>
-</div>
+</div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 
 <script src="/js/activate-power-mode.js"></script>
